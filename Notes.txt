@@ -1,0 +1,331 @@
+Author block:
+    " I am learning how to do python. I already learnt how to do python a while back, 
+    but my harddrive was fried so I am here starting new notes and relearning it. I am
+     also doing this in the middle of my CSS becuase I couldn't see progress with CSS 
+     as I could with something like python. Also, I had a long depessive epsodie so CSS 
+     was over a month ago."
+Goals:
+    " I know how to do C before so I think I want to built some programs like C in python.
+    I was thinking like a restaurant cheif working on thing. Where each cheif could put whos
+     order they are working on and if they are getting off or on and etc. I also think a simple
+     game of hangman or something reading from a txt file for a list of words.
+Recorded dates:
+    "    Start 7/13/2023
+         End 7/14/2023"
+Video Resoruce:
+    "https://www.youtube.com/watch?v=rfscVS0vtbw&ab_channel=freeCodeCamp.org"
+Resoruce from Prio Learning:
+    "https://www.w3schools.com/python/default.asp"
+
+
+1. Output to Temrnal
+    <print("")>
+        - "" says it is a string
+    - To mix strings and varibles use
+        - +
+        or 
+        - ,
+    - Math in print
+        - ints will be considered strings unless specsifided
+        - you will need to cast the ints into ints to do math on them.
+
+2. Varibles
+    <varible_name> = assgin info
+        - Don't need to declar type python will do it automoaticly
+        - int
+        - float
+        - string
+        - bool
+
+3. Escape Charaters
+    - \\
+    - \n
+    - \"
+    - Others can be found online
+
+4. String 
+    - string_name.upper()
+        - upper case everything
+    - string_name.lower()
+        - Lower case everything
+    - string_name.index()
+        - Find something
+        - Return index
+    -string_name.replace()
+        - input phrase
+        - will replace with second phrase
+5. Math
+    - int
+        2
+    - float 
+        - 2.5541
+        - -2.5234
+    - 2+2
+        -addidtion
+    - 2/2
+        - division
+    - 2-2
+        - subtraction
+    - 2*2
+        - mutilplication
+    - 2%2
+        - mod
+    - 2*(2*2)
+        - set order of opprastion
+    - 2**3
+        - power by
+    - prints
+        - need to cast ints into strings when printing both string and ints together
+            -str(int_name)
+    - abs()
+        - abosloute value
+    - pow()
+        - power
+    - max()
+        - max vaule of inputs
+    - min()
+        - min vaule of inputs
+    - round()
+        - round numbers
+    - imports
+        - from math import *
+            - floor()
+                - round down
+            - ceil()
+                - round up
+            - sqrt()
+                - square root
+6. Input from user
+    - input("string for user to read")
+        - will return user input
+7. List
+    - A list of items
+        - list_name = []
+            - ordered, changeable, and can have duplicates
+            - indexed at 0
+
+        - You can call each item by refering to their index
+            - list_name[2]
+            - Can also do ranges
+                - list_name[1:3]
+                    - go from index 1 to 2
+                - list_name[:3]
+                    - go from start to 2
+                - list_name[1:]
+                    - start from 1 go to end
+        - You can replace an item by using its index
+            - list_name[2] = something new
+                - will change item at index 2 to something new
+        - Merging two list
+            - list1.extend(list2)
+                - list1 will now have both list1 and list2
+        - Adding items
+            - list_name.append(item)
+                - Will add item to the end of the list
+        - Inserting an item
+            - list_name.insert(1,item)
+                - Will insert item at index 1 and pushing 1 to 2 and sofoward
+        - Deleteing a item
+            - list_name.remove(item)
+                - will remove item from list
+        - deleteing last value
+            - list_name.pop()
+                - Will delete last item
+        - finding the index of an item
+            - list_name.index(item)
+                - will return item index
+        - Count how many of a specsifided item in list
+            - list_name.count(item)
+                - will count how many times item apper on the list
+        - Sorting list
+            - list_name.sort()
+                - Sort list
+        - Reverse list
+            - list_name.reverse()
+                - will reverse list
+        - Copy list
+            - New_List_Name = old_list.copy()
+                - Will copy old list into new list
+        - Number of items
+            - len(list_name)
+                - will return number of items
+        - You can find more online
+8. 2D list
+    - list_name= [[],[]]
+        - A list inside a list
+            - you can call each 
+                -list_name[index][index]
+                    - where first index if refering to which list inside the list
+                    - And second index is refering to which item 
+9. Truples
+    - ordered, unchangeable, and allows duplicates
+    - Most commans from lists will work with truples
+        - Exsecpt from those that changes the truples
+        - Find more online
+-10. Dictionories
+    - Ordered, changeable, but dose not allow duplicates
+    - A pair of items
+        - dict_name {
+            item_name:item_info,
+            item2_name:item2_info
+        }
+    - Allows to find item_info using item_name
+        - dict_name["item_name"]
+            - will return item_info
+            - will return and error code if not found
+        - dict_name.get(item_name, if_not_Found_Message)
+            - Better way to get items
+11. Functions
+    - def function_name():
+        Funcation Functions
+    - Used to set a order of commans into one
+    - Pass items into function 
+        - def function_name(item1, item2):
+    - Calling a function
+        - function_name(items needed)
+            - all items requested will be needed to be input
+    - Returning a value
+        - return(item)
+            - will let the function return that vaule 
+12. Logic
+    - True
+    - False
+    - 2>3
+    - 3<2
+    - 3 == 2
+    - 3 != 2
+    - 3 > 2 and 3 > 1
+    - 3 > 2 or 3 < 2
+13. If statement
+    - if Logic:
+        code
+        - if the logic is true then, code will run
+    - elif:
+        - anoter posability of if or contiuning elif
+    - else:
+        - if notthing else works this will run
+14. While loops
+    - while true:
+        code
+        - Will Countine to run the code when the logic is true
+15. For loops
+    - for x in varible_name
+        code
+        - Will run while iterating through items
+    - When using a normal string, x will go through each charaters.
+    - When using for a list, turples, or dict,
+        - Will loop through each set
+    -Can also use range function to loop through a set of numbers
+        - range(3)
+            - run to 3
+        - range(1,3)
+            - starts a 1
+            - ends at 2
+        - range (1,20,2)
+            - start at 1
+            - ends at 19
+            - incerment by 2
+    - else
+        - in the case of for loops, else staement will always run
+16. Try
+    - In most programming langague when an error code accuor, the code will exit
+    - With try, you can find the error, print to Temrnal the error and continue the programming
+    - try
+        code
+       except:
+        code
+        - This will try the code if theres and error, it will run the except code
+        - However, just using except is to board. Most poeple put a specsif error code to read.
+    - except ValueError:
+        code
+        - This is finding the specsif error of ValueError
+        - Where the code only runs if ValueError error code is dectected
+    - You can also do  
+        - except ZeroDivisionError as err:
+            - Where err will be a varible of a string of the error code readable by the except
+17. File Handling
+    - Reading files
+        - varible_name = open("File_location/File_Name","open_mode")
+            - This will open the file
+            - Modes
+                - r
+                    - Read 
+                    - Error if files do not exist
+                - w
+                    - Write 
+                    - Creates the file if file do not exist
+                - a
+                    - Add to the end of the file
+                    - Creates file if file do not exits
+                - x
+                    - Create file   
+                    - Errors if file already exists
+            - Now to read it
+                - Open in r mode
+                - check if file is readable
+                    - varible_name.readable()
+                        - Will return true or False
+                - Check the whole file
+                    - varible_name.read()
+                        - Will return the whole file
+                - Check each line
+                    - varible_name.readline()
+                        - will read line 1 and continue down 
+                        - will stay to where you left it
+                - Put each line in an list
+                    - varible_name.readlines()
+                        - will return a list where each item is a line on the file
+                        - you can also specsifided which line you want to read
+                            - varible_name.readlines()[line_number]
+                                - Will return that line number text
+        - Writing files
+            - open in a
+                - varible_name.write(something)
+                    - will add something to the end of the file
+                        - remember no new line is added so it will be on the same line as the last one
+                            - Need to put \n to create the new line
+            - Open in w
+                - Will override the whole file
+                    - If it exist, it will delete it and make a new one
+                    - If it dosent exist, it will make a new one
+        -Remember to ALWAYS close the file
+            - varible_name.close()
+18. Modules 
+    - You can import other files into your code 
+        - you can make your own modules or use Others
+            - To import your own, simply do 
+                - import File_Name
+            - To import others, simply
+                - Download if needed using pip
+                - import file_name
+            - To use the functions inside the modules,
+                - module_name.function_name()
+19. Classes and Object
+    - Classes are your own types of data
+    - class class_name:
+        def __init__(self,item1,item2,item3):
+            self.item1 = item1
+            self.item2 = item2
+            self.item3 = item3
+        - That's how you create a class
+    - To create an object, you would do that same as a varible
+    - object_name = class_name(item1,item2,item3)
+        - Now, object_name has all 3 of those items within one object
+    - You can also include functions inside your classes
+        - class class_name:
+            def function_name(self):
+                code
+        - Here, you can call this function from inside the class
+            - Useful cases of using each items to create new information from the items
+                - ie.
+                    - if you havev gpa, a function could find if you are on honor rolls or not.
+    - To get each item out of the object
+        - object_name.item
+20. Classes inheritence
+    - You can create a class with some of the feasture of another class
+        - class class2_name(class_name):
+            code
+        - Here class2_name will have the same properies as class_name
+            - But, you can override or add new things to class2_name without effecting class_name
+                - To override, simply rewrite the new code replaceing it with the new info
+                - same with adding things
